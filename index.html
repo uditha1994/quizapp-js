@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QuizMaster - OOP Demostrate App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-    
+    <div class="container">
+        <header>
+            <div class="logo">Quiz <span>Master</span></div>
+            <div class="subtitle">Test your knowledge with our interactice quiz</div>
+        </header>
+
+        <div class="content">
+            <!-- welcome screen -->
+            <div class="screen welcome-screen active" id="welcomeScreen">
+                <div class="welcome-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <h2 class="welcome-message">Welcome to QuizMaster! Challenge yourself with various quiz types and
+                    improve your knowledge</h2>
+
+                <div class="quiz-options">
+                    <div class="option-card" data-quiz-type="general">
+                        <div class="option-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="option-title">General Knowledge</div>
+                        <p>10 questions about various topics</p>
+                    </div>
+
+                    <div class="option-card" data-quiz-type="science">
+                        <div class="option-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <div class="option-title">Science & Technology</div>
+                        <p>Test your science knowledge</p>
+                    </div>
+
+                    <div class="option-card" data-quiz-type="programming">
+                        <div class="option-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="option-title">Programming</div>
+                        <p>Javascript and programming concepts</p>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary btn-lg" id="startBtn">
+                    <i class="fas fa-play"></i> Start Quiz
+                </button>
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
